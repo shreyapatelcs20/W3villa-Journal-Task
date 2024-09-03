@@ -1,0 +1,116 @@
+import java.util.Scanner;
+
+public class McCullochPittsXOR {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        double w11, w12, w21, w22, v1, v2, theta;
+        int con;
+        double[] x1 = {0, 0, 1, 1};
+        double[] x2 = {0, 1, 0, 1};
+        int[] z = {0, 1, 1, 0};
+        int[] y1 = new int[4];
+        int[] y2 = new int[4];
+        int[] y = new int[4];
+
+        System.out.println("Enter weights");
+        System.out.print("Weight w11=");
+        w11 = input.nextDouble();
+        System.out.print("Weight w12=");
+        w12 = input.nextDouble();
+        System.out.print("Weight w21=");
+        w21 = input.nextDouble();
+        System.out.print("Weight w22=");
+        w22 = input.nextDouble();
+        System.out.print("Weight v1=");
+        v1 = input.nextDouble();
+        System.out.print("Weight v2=");
+        v2 = input.nextDouble();
+        System.out.println("Enter Threshold Value");
+        System.out.print("Theta=");
+        theta = input.nextDouble();
+
+        con = 1;
+
+        while (con != 0) {
+            double[] zin1 = new double[4];
+            double[] zin2 = new double[4];
+
+            for (int i = 0; i < 4; i++) {
+                zin1[i] = x1[i] * w11 + x2[i] * w21;
+                zin2[i] = x1[i] * w12 + x2[i] * w22;
+
+                if (zin1[i] >= theta) {
+                    y1[i] = 1;
+                } else {
+                    y1[i] = 0;
+                }
+
+                if (zin2[i] >= theta) {
+                    y2[i] = 1;
+                } else {
+                    y2[i] = 0;
+                }
+            }
+
+            double[] yin = new double[4];
+
+            for (int i = 0; i < 4; i++) {
+                yin[i] = y1[i] * v1 + y2[i] * v2;
+
+                if (yin[i] >= theta) {
+                    y[i] = 1;
+                } else {
+                    y[i] = 0;
+                }
+            }
+
+            System.out.println("Output of Net");
+            for (int i = 0; i < 4; i++) {
+                System.out.print(y[i] + " ");
+            }
+            System.out.println();
+
+            boolean flag = true;
+            for (int i = 0; i < 4; i++) {
+                if (y[i] != z[i]) {
+                    flag = false;
+                    break;
+                }
+            }
+
+            if (flag) {
+                con = 0;
+            } else {
+                System.out.println("Net is not learning, enter another set of weights and Threshold value");
+                System.out.print("Weight w11=");
+                w11 = input.nextDouble();
+                System.out.print("Weight w12=");
+                w12 = input.nextDouble();
+                System.out.print("Weight w21=");
+                w21 = input.nextDouble();
+                System.out.print("Weight w22=");
+                w22 = input.nextDouble();
+                System.out.print("Weight v1=");
+                v1 = input.nextDouble();
+                System.out.print("Weight v2=");
+                v2 = input.nextDouble();
+                System.out.print("Theta=");
+                theta = input.nextDouble();
+            }
+        }
+
+        System.out.println("McCulloch-Pitts Net for XOR function");
+        System.out.println("Weights of Neuron Z1");
+        System.out.println(w11);
+        System.out.println(w21);
+        System.out.println("Weights of Neuron Z2");
+        System.out.println(w12);
+        System.out.println(w22);
+        System.out.println("Weights of Neuron Y");
+        System.out.println(v1);
+        System.out.println(v2);
+        System.out.println("Threshold value");
+        System.out.println(theta);
+    }
+}

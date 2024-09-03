@@ -1,0 +1,278 @@
+body {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    // overflow-x: hidden;
+  }
+
+ .menu-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 4rem;
+    background-color: antiquewhite;
+    
+  }
+
+  .home1{
+    display: flex;
+    align-items: center;
+  }
+
+  .home2{
+    display: flex;
+    align-items: center;
+  }
+  
+  .home3{
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(19, 14, 14);
+    padding: 0;
+    margin: 0;
+  }
+  
+ul li {
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+  
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 5px 20px; 
+}
+  
+
+  .journal{
+    float: left;
+
+  }
+
+  .button{
+    padding-top: 1.5rem;
+    width:30%;
+  }
+
+  .all{
+      background-color: blue;
+      color: white;
+      height:50%;
+      margin: 0px;
+  }
+
+  .search{
+      width:80%;
+      height:50%;
+      margin:-4px;
+      padding:0;
+      border: none;
+  }
+
+  .journal-container{
+    float: left;
+    display: flex;
+    text-align: center;
+
+  }
+
+  .journal-container ul li{
+    margin-top: 10px;
+    color: grey;
+    font-size: medium;
+  }
+
+.shopping-container{
+  height: 2rem;
+  padding-top: 2rem;
+}
+
+
+.department-container{
+  width: 100%;
+  height: 3.5rem;
+  background-color: blue;
+  justify-content: space-between;
+  display: flex;
+  align-items: end;
+}
+
+.department-container ul li{
+  color: white;
+}
+
+.blog-container{
+  padding-right: 3rem;
+}
+
+.department{
+  width: 13rem;
+  height: 57px;
+  // padding-left: 1rem;
+  background-color: yellow;
+  // margin-left: 6rem;
+}
+.department li{
+  color: black;
+}
+
+.blog{
+  background-color: yellow;
+  height: 57px;
+  width: 8rem;
+  
+}
+
+.blog li{
+  color: black;
+}
+
+.mobile-container{
+  height: 66vh;
+  display: flex;
+  padding-top: 1rem;
+  padding-left: 6rem;
+}
+
+.phone-container{
+  padding-top: 2rem;
+  width: 60%;
+  height: 60vh;
+  background-image: url(w3villa-mobile.jpeg);
+  padding-left: 5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: white;
+  border-radius: 0.5rem;
+}
+.phone{
+  padding-top: 7rem;
+}
+
+.phone .btn{
+  background-color: blue;
+  color: white;
+  border: none;
+  font-size: medium;
+}
+
+.watch-pc{
+  width: 28%;
+  height: 60vh;
+  padding-left: 2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: white;
+  gap: 1rem;
+  
+}
+.watch{
+  width: 20vw;
+  height: 25vh;
+  padding-left: 2rem;
+  background-repeat: no-repeat;
+  flex-wrap: wrap;
+  position: relative;
+  color: white;
+  border-radius: 1rem;
+  padding-bottom: 2rem;
+  
+}
+
+.shipping-container{
+  background-color: rgb(49, 46, 46);
+  height: 5rem;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  
+}
+
+.shipp{
+  padding: 0px;
+  // width: calc(100% / 4 - 0.01px);
+}
+
+
+
+.buy-container{
+  width: 100%;
+  text-align: center;
+}
+
+.para {
+  width: 60%;
+  text-align: center;
+  padding-left: 17rem;
+  padding-right: 17rem;
+  color: grey;
+  
+}
+
+.categories-container{
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.top{
+  background-color: blue;
+  color: white;
+  width: 10rem;
+  height: 3rem;
+}
+
+.electronic{
+  background-color: rgb(166, 160, 160);
+  color: rgb(240, 237, 237);
+  width: 10rem;
+  height: 3rem;
+}
+
+.images{
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 3rem;
+}
+
+.fashion{
+  gap: 1rem;
+  position: relative;
+  // border-radius: 5rem;
+  
+}
+
+.fashion .button{
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+

@@ -1,0 +1,14 @@
+LLM models
+prompts
+when we are acknowledge to model what will happened?
+zero shoting prompting
+one
+ few shoting prompting
+
+
+https://jamboard.google.com/d/1pwiBNXFZYhAXGZDWvcvn0AAhnbAltqJikxbu7UUOBj8/edit?usp=meet_whiteboard
+
+
+lab - https://ml.azure.com/experiments/id/bb672fd0-5c6e-4df6-9535-489b72dccea8/runs/machine?wsid=/subscriptions/43880cca-23c8-42d3-b4da-2aa86e87635e/resourcegroups/free_ML_trail/providers/Microsoft.MachineLearningServices/workspaces/Machine_learing&tid=9d0bf1ed-9dbb-4ad2-b95e-efaf17869937
+
+https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/01-machine-learning.html
